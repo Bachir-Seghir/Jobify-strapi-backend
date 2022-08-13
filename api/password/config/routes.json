@@ -1,0 +1,14 @@
+{
+   "routes": [
+       {
+          "method": "POST",
+          "path": "/password",
+          "handler": "password.index",
+          "config": {
+            "policies": [
+            "isAuthenticated", "global::isOwner"
+        ]
+      }
+       }
+   ]
+}

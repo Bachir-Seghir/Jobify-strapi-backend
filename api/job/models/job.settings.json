@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "Job",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "fullTime",
+        "partTime",
+        "contract"
+      ],
+      "required": false
+    },
+    "expiryDate": {
+      "type": "date"
+    },
+    "minSalary": {
+      "type": "biginteger"
+    },
+    "maxSalary": {
+      "type": "biginteger"
+    },
+    "experienceLevel": {
+      "type": "enumeration",
+      "enum": [
+        "entry",
+        "mid",
+        "internship",
+        "associate",
+        "executive",
+        "director",
+        "junior",
+        "senior"
+      ]
+    },
+    "place": {
+      "type": "enumeration",
+      "enum": [
+        "remote",
+        "onSite",
+        "both"
+      ]
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "minHourlyPrice": {
+      "type": "integer"
+    },
+    "maxHourlyPrice": {
+      "type": "integer"
+    },
+    "locations": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "company": {
+      "via": "jobs",
+      "model": "company"
+    },
+    "user": {
+      "via": "postedJobs",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "applicants": {
+      "via": "job_applieds",
+      "plugin": "users-permissions",
+      "autoPopulate": true,
+      "collection": "user"
+    },
+    "connects": {
+      "type": "integer"
+    }
+  }
+}

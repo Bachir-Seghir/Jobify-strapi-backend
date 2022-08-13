@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_profile_notifications",
+  "info": {
+    "name": "notifications",
+    "icon": "comment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false
+    },
+    "from": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "subject": {
+      "type": "string"
+    }
+  }
+}

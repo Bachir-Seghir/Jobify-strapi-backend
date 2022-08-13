@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+        "cloud_name": "bachirseghir",
+        "api_key": "464599546789573",
+        "api_secret": "-TDwxLmkdDuau_erKqEPD5MR4ho"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_portfolio_work_states",
+  "info": {
+    "name": "workState",
+    "icon": "layer-group"
+  },
+  "options": {},
+  "attributes": {
+    "completedProject": {
+      "type": "integer"
+    },
+    "applies": {
+      "type": "integer"
+    },
+    "acceptedInterview": {
+      "type": "integer"
+    }
+  }
+}

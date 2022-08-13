@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_portfolio_rates",
+  "info": {
+    "name": "rate",
+    "icon": "balance-scale-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stars": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 5
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
