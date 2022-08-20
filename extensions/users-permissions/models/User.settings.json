@@ -163,6 +163,14 @@
     },
     "avatar": {
       "type": "string"
+    },
+    "articles": {
+      "via": "user",
+      "collection": "article"
+    },
+    "newsletter": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

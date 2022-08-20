@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "user": {
+      "via": "articles",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "topics": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
+    }
+  }
+}
