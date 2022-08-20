@@ -30,7 +30,7 @@
       "type": "string"
     },
     "excerpt": {
-      "type": "string"
+      "type": "text"
     }
   }
 }
